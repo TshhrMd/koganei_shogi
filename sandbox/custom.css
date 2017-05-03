@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+body{
+	padding-top: 70px;
+
+}
+
+
+.hamburger-text {
+	width:		100%;
+	font-size:	6px;
+	margin-top:	12px;
+	color:		#FFF;
+	display:	center;
+}
