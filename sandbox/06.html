@@ -89,7 +89,10 @@
         <div class="panel panel-primary">
           <div class="panel-heading">小金井将棋研究会会員ページ</div>
           <div class="panel-body">
-            <button class="btn btn-default" role="button" onclick="gate();">通算成績一覧</button> 会員のみ閲覧
+            <button class="btn btn-default" role="button" onclick="gate('standings');">通算成績一覧</button> 会員のみ閲覧
+          </div>
+          <div class="panel-body">
+            <button class="btn btn-default" role="button" onclick="gate('members');">メンバー一覧</button> 会員のみ閲覧
           </div>
         </div>
       </div>
@@ -181,9 +184,9 @@
   <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript">
-   function gate() {
+   function gate(basename) {
       var UserInput = prompt("パスワードを入力して下さい:","");
-      location.href = "06-standings-"+ UserInput + ".html";
+      location.href = "06-" + basename + "-"+ UserInput + ".html";
    }
   </script>
 </body>
