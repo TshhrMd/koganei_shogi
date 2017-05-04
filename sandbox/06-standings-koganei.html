@@ -25,15 +25,18 @@
               } 
             }); 
             $("#foo-table").dataTable({
-                ajax: { url: "standings.json", dataSrc: '' },
+                ajax: { url: "standings-with-rating.json", dataSrc: '' },
+                order: [[ 1, "desc" ], [0, "asc"]],
                 columns: [
+                  { data: "no" },
                   { data: "date" },
                   { data: "name1" },
                   { data: "degree1" },
-                  { data: "win1" },
+                  { data: "rating1" },
                   { data: "name2" },
                   { data: "degree2" },
-                  { data: "win2" }
+                  { data: "rating2" },
+                  { data: "type" }
                 ]
             });
         });
@@ -86,7 +89,7 @@
         <div class="table-responsive">
         <table id="foo-table" class="table table-bordered table-striped table-hover">
           <thead>
-            <tr><th>日付</th><th>氏名1</th><th>段1</th><th>勝負1</th><th>氏名2</th><th>段2</th><th>勝負2</th></tr>
+            <tr><th>No</th><th>日付</th><th>勝</th><th>段</th><th>レーティング</th><th>負</th><th>段</th><th>レーティング</th><th>種別</th></tr>
           </thead>
         </table>
         </div>
