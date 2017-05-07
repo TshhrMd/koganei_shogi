@@ -18,6 +18,15 @@
   <link rel="stylesheet" href="https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11/datatables.min.css"/> 
   <script src="https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11/datatables.min.js"></script>
   <script>
+     var columnsDef = [
+                  { data : function(data, type, row, meta){
+                      return '<a href="06-mypage-koganei.html?name=' + data.name1 + '">' + data.name1 + '</a>';
+                    }
+                  },
+                  { data: "degree1" },
+                  { data: "profile1" }
+                ];
+
         jQuery(function($){
             $.extend( $.fn.dataTable.defaults, { 
               language: {
@@ -27,11 +36,7 @@
             $("#foo-table").dataTable({
                 ajax: { url: "members.json", dataSrc: '' },
                 order: [[ 1, "desc" ], [0, "asc"]],
-                columns: [
-                  { data: "name1" },
-                  { data: "degree1" },
-                  { data: "profile1" }
-                ]
+                columns: columnsDef
             });
         });
   </script>
