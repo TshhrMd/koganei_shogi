@@ -1,4 +1,8 @@
 @charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+* {
+  box-sizing: border-box;  
+}
 
 body{
 	padding-top: 70px;
@@ -13,3 +17,60 @@ body{
 	color:		#FFF;
 	display:	center;
 }
+
+.chat-output {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  background: white;
+  flex-direction: column;
+}
+.chat-output > div {
+  margin: 0 0 20px 0;
+}
+.chat-output .user-message {
+  text-align: right;
+}
+.chat-output .user-message .message {
+  background: #0fb0df;
+  color: white;
+}
+.chat-output .bot-message {
+  text-align: left;
+}
+.chat-output .bot-message .message {
+  background: #eee;
+}
+.chat-output .message {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+.chat-input {
+  padding: 6px 12px;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-bottom: 1;
+}
+.chat-input .user-input {
+  width: 100%;
+  font-size: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 6px;
+}
+.scroll-wrapper {
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  min-height:350px;
+
+}
+
+.scroll-wrapper iframe {
+  height: 100%;
+  width: 100%;
+  border:none;
+  display:block;
+  min-height:350px;
+}
+

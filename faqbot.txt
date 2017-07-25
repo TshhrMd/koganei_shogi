@@ -1,0 +1,17 @@
+POST /knowledgebases/1bbfe139-f0f1-4484-b646-c2b9c2002db2/generateAnswer
+Host: https://westus.api.cognitive.microsoft.com/qnamaker/v2.0
+Ocp-Apim-Subscription-Key: d80e1f1379334bd0b923bf1b9cd90437
+Content-Type: application/json
+{"question":"hi"}
+
+
+koganei shogi
+e367644b-3464-4caf-ae56-10dd1a6b8f36
+GSSBAWWj5FioZcbnH6Ds5U7
+
+
+
+koganei-shogi
+021ff471-88ca-4979-a47a-d2a4be0f7bb4
+fbqCCiWZmzbS3tZLOfopj91
+
