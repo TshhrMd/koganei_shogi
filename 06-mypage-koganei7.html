@@ -17,8 +17,11 @@
   <link href="http://koganeishougi.homepagelife.jp/_sc_index_rss20.xml" rel="alternate" title="RSS2.0" type="application/rss+xml" />
   <link rel="stylesheet" href="https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11/datatables.min.css"/> 
   <script src="https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11/datatables.min.js"></script>
-  <script type="text/javascript">
+<!--
     window.onload = function onLoad() {
+-->
+  <script type="text/javascript">
+    $(document).ready(function(){
       win = 0;
       winningStreak = 0;
       loose = 0;
@@ -27,7 +30,7 @@
       param = GetQueryString();
       target = document.getElementById("param");
       target.innerHTML = param["name"];
-    }
+    });
     function GetQueryString() {
       if (1 < document.location.search.length) {
         // 最初の1文字 (?記号) を除いた文字列を取得する
@@ -114,15 +117,16 @@
 <body>
   <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-       <div class="navbar-header">
-         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main">
-           <span class="sr-only">メニュー</span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="hamburger-text">MENU</span>
-        </button>
-      </div>
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-target="#navbar-main" data-toggle="collapse" type="button">
+					<span class="sr-only">メニュー</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+				<div class="navbar-brand" href="#">
+				</div>
+				</div>
       <div class="collapse navbar-collapse" id="navbar-main">
         <ul class="nav navbar-nav">
           <li><a href="index.html">トップ</a></li>
@@ -144,7 +148,7 @@
       <br />
       <div class="row">
         <div class="col-lg-2 col-md-3 col-sm-4">
-          <img src="img/logo.jpeg" alt="小金井の将棋道場です" height="90" width="90" position="bottom" />
+						<img class="pc" alt="小金井の将棋道場です" height="90" position="bottom" src="img/logo.jpeg" width="90" />
         </div>
         <div class="col-lg-10 col-md-9 col-sm-8">
           <h1><div id="param"></div>さんのマイページ</h1>
@@ -242,8 +246,8 @@ var jsonData = $.ajax({
            {
              ticks: {
                beginAtZero: true,
-               min: 800,
-               max: 1200
+               min: 1200,
+               max: 1800
              }
            }
          ]

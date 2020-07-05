@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+	<head>
+
+		<meta charset="utf-8" />
+
+		<meta content="小金井こども将棋大会のご案内や将棋研究会,小金井子供将棋教室、将棋大会の紹介をしています。" name="description" />
+
+		<meta content="小金井将棋、小金井子供将棋大会、小金井こども将棋大会,小金井将棋大会,武蔵小金井将棋,小金井将棋研究会,小金井子供将棋教室,小金井こども将棋教室,小金井将棋大会,小池裕喜,杉本和陽,小金井支部" name="keywords" />
+
+		<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+		<title>小金井将棋</title>
+
+		<link href="favicon.ico" rel="SHORTCUT ICON" />
+
+		<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css" integrity="sha384-zF4BRsG/fLiTGfR9QL82DrilZxrwgY/+du4p/c7J72zZj+FLYq4zY00RylP9ZjiT" rel="stylesheet" />
+<!--fullcalendar-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link href='fullcalendar/fullcalendar.min.css' rel='stylesheet' />
+<link href='fullcalendar/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+
+		<link href="custom.css" rel="stylesheet" />
+
+		<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+		<link href="http://koganeishougi.homepagelife.jp/_sc_index_rss20.xml" rel="alternate" title="RSS2.0" type="application/rss+xml" />
+		<script _sc_plugin="true" charset="UTF-8" src="https://ssl.direct.sc/plugin/formmail/js/varidate.js" type="text/javascript">
+		</script>
+	</head>
+	<body>
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-target="#navbar-main" data-toggle="collapse" type="button">
+					<span class="sr-only">メニュー</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+				<div class="navbar-brand" href="#">
+				</div>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-main">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="index.html">トップ</a></li>
+						<li>
+							<a href="01.html">こども将棋大会</a></li>
+						<li>
+							<a href="02.html">こども将棋教室</a></li>
+						<li>
+							<a href="03.html">小金井将棋研究会</a></li>
+						<li>
+							<a href="04.html">リンク集</a></li>
+						<li>
+							<a href="05.html">小金井支部</a></li>
+						<li>
+							<a href="06.html">結果</a></li>
+						<li>
+							<a href="http://koganeishougi.homepagelife.jp/_sc_index_rss20.xml"><img src="img/btn_rss3_05.gif" /></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="page-header" id="banner">
+				<div class="row">
+					<div class="col-lg-2 col-md-3 col-sm-4">
+						<img class="pc" alt="小金井の将棋道場です" height="90" position="bottom" src="img/logo.jpeg" width="90" /></div>
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<h1>
+							小金井将棋</h1>
+						<p class="lead">
+							KOGANEI SHOGI</p>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4">
+					<a href="contactus.html">お問い合わせ</a>&nbsp;|&nbsp;<a href="privacy_policy.html">個人情報保護について</a>&nbsp;|&nbsp;<a href="faq.html">FAQ</a>
+					</div>
+					<p>
+						&nbsp;</p>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modal-content-01">
+
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+
+					<div class="modal-header">
+
+						<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+
+						<h4 id="modalTitle" class="modal-title"></h4>
+
+					</div>
+
+					<div id="modalBody" class="modal-body"></div>
+
+					<div class="modal-footer">
+
+						<button class="btn btn-primary" data-dismiss="modal" type="button">閉じる</button>
+						<button id="gcal-button" class="btn btn-primary" data-dismiss="modal" type="button"><a id="eventUrl" target="_blank">GoogleCalendar</a></button></div>
+				</div>
+
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<h2>
+					過去のNEWS一覧</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							2019年の情報</div>
+						<div class="panel-body">
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１９年１２月大会" height="220" src="img/06-kenkyukai-20191214-1.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										12月研究会</h3>
+								</div>
+								<p>
+									2019年12月14日 小金井将棋研究会2019年12月大会は8名参加の時計ハンデ戦を行い太田さんが４勝で優勝。準優勝は高柳さんでした。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20191214.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="杉本和陽先生指導対局会" height="220" src="img/sugimoto-20191207-1.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										杉本和陽先生<br/>指導対局会</h3>
+								</div>
+								<p>
+									2019年12月7日 杉本先生の指導対局会を行いました。</p>
+								</figcaption>
+								<a href="05-sugimoto-20191207.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１９年１１月大会" height="220" src="img/06-kenkyukai-20191117-1.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										11月研究会</h3>
+								</div>
+								<p>
+									2019年11月17日 小金井将棋研究会2019年11月大会は8名参加の時計ハンデ戦を行い亀田さんが３勝で優勝。準優勝は杉浦さんでした。勝又先生の指導対局も合わせて行われました。大変勉強になる次の一手でした。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20191117.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="勝又先生指導対局会" height="220" src="img/katsumata-20191117-1.jpg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										勝又先生<br/>指導対局会</h3>
+								</div>
+								<p>
+									2019年11月17日 勝又先生の指導対局会を行いました。</p>
+								</figcaption>
+								<a href="05-katsumata-20191117.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１９年１０月大会" height="220" src="img/06-kenkyukai-20191019-01.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										10月研究会</h3>
+								</div>
+								<p>
+									2019年10月19日 小金井将棋研究会2019年10月大会は8名参加の時計ハンデ戦を行い太田さんが３勝１敗で優勝。準優勝は初参加の能勢さんで同じく３勝１敗でした。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20191019.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="第３回小金井支部主催こども将棋大会" height="220" src="img/06-shibu-kodomo-3-01.jpg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										第３回小金井支部主催こども将棋大会</h3>
+								</div>
+								<p>
+									2019年9月23日 第３回小金井支部主催こども将棋大会は22名参加。熱戦が繰り広げられました。門倉先生の指導対局も行いました。</p>
+								</figcaption>
+								<a href="06-shibu-kodomo-3.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１９年９月大会" height="220" src="img/06-kenkyukai-20190921-01.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										9月研究会</h3>
+								</div>
+								<p>
+									2019年9月21日 小金井将棋研究会2019年9月大会は8名参加の時計ハンデ戦を行い亀田さんが４勝で優勝。準優勝は千葉さんで３勝１敗でした。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20190921.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井市民文化祭将棋教室" height="220" src="img/2019市民文化祭.png" /> <figcaption>
+								<div class="heading">
+									<h3>
+										小金井市民文化祭将棋教室</h3>
+								</div>
+								<p>
+									2019年10月14日 小金井市民文化祭でこども将棋教室が開催されます。</p>
+								</figcaption>
+								<a href="https://koganei-kanko.jp/event/5735/"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１９年８月大会" height="220" src="img/06-kenkyukai-20190818-01.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										8月研究会</h3>
+								</div>
+								<p>
+									2019年8月18日 小金井将棋研究会2019年8月大会は8名参加の時計ハンデ戦を行い高柳さんが３勝１敗で優勝。準優勝は佐藤さん。同じく３勝１敗でした。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20190818.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１９年７月大会" height="220" src="img/06-kenkyukai-20190715-01.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										7月研究会</h3>
+								</div>
+								<p>
+									2019年7月15日 小金井将棋研究会2019年7月大会は8名参加の時計ハンデ戦を行い亀田さんが４戦全勝で優勝。準優勝は續さんです。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20190715.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１９年６月大会" height="220" src="img/06-kenkyukai-20190622-01.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										6月研究会</h3>
+								</div>
+								<p>
+									2019年6月22日 小金井将棋研究会2019年6月大会は8名参加の時計ハンデ戦を行い谷内さんが４戦全勝で優勝。準優勝は亀田さんです。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20190622.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="第３回小金井支部主催将棋大会" height="220" src="img/06-shibu-otona-3-1.jpg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										第３回小金井支部主催将棋大会</h3>
+								</div>
+								<p>
+									2019年6月16日 第３回小金井支部主催将棋大会は22名参加。Sクラスは近藤さん、Aクラスは古本さんが優勝しました。</p>
+								</figcaption>
+								<a href="06-shibu-otona-3-20190616.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１９年５月大会" height="220" src="img/06-kenkyukai-20190518-01.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										5月研究会</h3>
+								</div>
+								<p>
+									2019年5月18日 小金井将棋研究会2019年5月大会は8名参加の時計ハンデ戦を行い亀田さんが４戦全勝で優勝。準優勝は終盤までスキがなかった杉浦さんです。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20190518.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="カロリーナ女流" height="220" src="img/karolina-20180602-1.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										カロリーナ女流</h3>
+								</div>
+								<p>
+									平成バックログ＃７。2018年6月2日に、なんとカロリーナ女流がこども教室の講師に来られました。</p>
+								</figcaption>
+								<a href="05-karolina-20180602.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="門倉啓太先生指導対局会" height="220" src="img/kadokura-russian.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										門倉啓太先生<br/>指導対局会</h3>
+								</div>
+								<p>
+									平成バックログ＃６。2019年4月27日 研究会のあとに門倉先生の指導対局会を行いました。</p>
+								</figcaption>
+								<a href="http://koganeishougi.homepagelife.jp/05-kadokura-20190427.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="遠山雄亮先生指導対局会" height="220" src="img/toyama-20190211-1.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										遠山雄亮先生<br/>指導対局会</h3>
+								</div>
+								<p>
+									平成バックログ＃５。2019年2月11日 遠山先生の指導対局と支部会員棋譜の解説会を行いました。</p>
+								</figcaption>
+								<a href="http://koganeishougi.homepagelife.jp/05-toyama-20190211.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="勝又清和先生指導対局会" height="220" src="img/katsufes2019dec-01.jpg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										勝又清和先生<br/>指導対局会</h3>
+								</div>
+								<p>
+									平成バックログ＃４。2018年12月9日 勝又先生の指導対局会を行いました。写真を追加しました。</p>
+								</figcaption>
+								<a href="http://koganeishougi.homepagelife.jp/05-katsumata-20181209.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="長岡裕也先生指導対局会" height="220" src="img/nagaoka-20181021-1.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										長岡裕也先生<br/>指導対局会</h3>
+								</div>
+								<p>
+									平成バックログ＃３。2018年10月21日 長岡先生に来て頂きました。切れ味鋭い解説をありがとうございました。</p>
+								</figcaption>
+								<a href="http://koganeishougi.homepagelife.jp/05-nagaoka-20181021.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="高田尚平先生指導対局会" height="220" src="img/takada-20190114-1.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										高田尚平先生<br/>指導対局会</h3>
+								</div>
+								<p>
+									平成バックログ＃２。2019年1月14日 高田尚平先生に来て頂きました。教えていただいたGさんの左玉が小平の大会で炸裂した模様です。</p>
+								</figcaption>
+								<a href="http://koganeishougi.homepagelife.jp/05-takada-20190114.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="支部対抗戦" height="220" src="img/shibutaiko-2019-1.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										2019年支部対抗戦</h3>
+								</div>
+								<p>
+									平成バックログ＃１。2019年2月10日 ２チーム参加しました。Aチームは決勝トーナメントまで進みました。</p>
+								</figcaption>
+								<a href="http://koganeishougi.homepagelife.jp/06-shibutaiko-2019-koganei7.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１９年４月大会" height="220" src="img/06-kenkyukai-20190427-01.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										4月研究会</h3>
+								</div>
+								<p>
+									2019年4月27日 小金井将棋研究会2019年4月大会は6名参加の時計ハンデ戦を行い谷田部さんが３戦全勝で優勝。準優勝は続さんです。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20190427.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="第２回小金井支部主催こども将棋大会" height="220" src="img/06-shibu-kodomo-2-01.jpg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										第２回小金井支部主催こども将棋大会</h3>
+								</div>
+								<p>
+									2019年3月30日 第２回小金井支部主催こども将棋大会は16名参加。熱戦が繰り広げられました。伊藤沙恵先生の指導対局、大盤解説会も行いました。</p>
+								</figcaption>
+								<a href="06-shibu-kodomo-2.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１９年３月大会" height="220" src="img/06-kenkyukai-20190324-01.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										3月研究会</h3>
+								</div>
+								<p>
+									2019年3月24日 小金井将棋研究会2019年3月大会は8名参加の時計ハンデ戦を行い太田さんが３戦全勝で優勝。準優勝は亀田さんです。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20190324.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１９年２月大会" height="220" src="img/06-kenkyukai-20190217-01.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										2月研究会</h3>
+								</div>
+								<p>
+									2019年2月17日 小金井将棋研究会2019年2月大会は8名参加の時計ハンデ戦を行い太田さんが４戦全勝で優勝。準優勝は高柳さんです。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20190217.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１９年１月大会" height="220" src="img/06-kenkyukai-20190119-01.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										1月研究会</h3>
+								</div>
+								<p>
+									2019年1月19日 小金井将棋研究会2019年1月大会は6名参加の時計ハンデ戦を行い高柳さんが４戦全勝で優勝。準優勝は植村さんです。高柳さんは昨年から11連勝。四段に昇段しました。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20190119.html"></a>
+							</figure>
+						</div>
+					</div>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							2018年情報</div>
+						<div class="panel-body">
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１８年１２月大会" height="220" src="img/06-kenkyukai-20181222-01.jpg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										12月研究会</h3>
+								</div>
+								<p>
+									2018年12月22日 小金井将棋研究会2018年12月大会は6名参加の時計ハンデ戦を行い高柳さんが４戦全勝で優勝。準優勝は亀田さんです。次回は1月14日に高田先生をお迎えして指導対局会を開催します。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20181222.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１８年１１月大会" height="220" src="img/06-kenkyukai-20181117-01.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										11月研究会</h3>
+								</div>
+								<p>
+									2018年11月17日 小金井将棋研究会2018年11月大会は6名参加の時計ハンデ戦を行いYさんが４戦全勝で優勝。準優勝は亀田さんです。次回は12月9日に勝又先生をお迎えして指導対局会を開催します。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20181117.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="第２回小金井支部主催将棋大会" height="220" src="img/06-shibu-otona-2-01.jpg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										第２回小金井支部主催将棋大会</h3>
+								</div>
+								<p>
+									2018年11月11日 第２回小金井支部主催将棋大会は10名参加。亀田さんが４戦全勝で優勝。準優勝は井上さんです。参加者全員が杉本先生の指導対局を受け、大盤解説会も行われました。次回研究会は11月17日に開催します。</p>
+								</figcaption>
+								<a href="06-shibu-otona-2-20181111.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１８年１０月大会" height="220" src="img/06-kenkyukai-20181020-01.jpg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										10月研究会</h3>
+								</div>
+								<p>
+									2018年10月20日 小金井将棋研究会2018年10月大会は8名参加の時計ハンデ戦を行い井上さんが４戦全勝で優勝。準優勝は太田さんです。次回は11月11日に第2回日本将棋連盟小金井支部主催将棋大会を開催します。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20181020.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１８年９月大会" height="220" src="img/06-kenkyukai-20180922-01.jpg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										9月研究会</h3>
+								</div>
+								<p>
+									2018年9月22日 小金井将棋研究会2018年9月大会は8名参加の時計ハンデ戦を行い亀田さんが４戦全勝で優勝。準優勝は植村さんです。次回は10月20日に開催します。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20180922.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img src="img/06-shibu-kodomo-1-06.jpg"  height="220" alt="2018社団戦３日目"/>
+								<figcaption>
+									<div class="heading">
+										<h3>支部主催こども将棋大会</h3>
+									</div>
+									<p>2018年9月15日 第１回小金井支部主催こども将棋大会を行いました。門倉先生に来て頂き指導対局と大盤解説も行って頂きました。28名にご参加いただきました。ありがとうございました。</p>
+								</figcaption>
+								<a href="06-shibu-kodomo-1.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img src="img/06-shadansen-20180826-01.jpg"  height="220" alt="2018社団戦３日目"/>
+								<figcaption>
+									<div class="heading">
+										<h3>2018社団戦３日目</h3>
+									</div>
+									<p>2018年8月26日 第２９回社団戦リーグ3日目が行われました。翔風館EOD戦は完封負け！。惜敗も多く成績は芳しくありませんが、勝又先生とお会いすることができました。先生のパワーを頂いて、ぜひとも残留したいと思います。</p>
+								</figcaption>
+								<a href="06-shadansen-2018-koganei7.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１８年８月大会" height="220" src="img/06-kenkyukai-20180818-01.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										8月研究会</h3>
+								</div>
+								<p>
+									2018年8月18日 小金井将棋研究会2018年8月大会は12名参加の時計ハンデ戦を行い亀田さんが４戦全勝で優勝。準優勝は３勝が３名と混戦となり、１ポイント差で高柳さんが獲得しました。次回は9月22日に開催します。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20180818.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img src="img/06-shadansen-20180701.jpg"  height="220" alt="2018社団戦開幕"/>
+								<figcaption>
+									<div class="heading">
+										<h3>2018社団戦開幕</h3>
+									</div>
+									<p>2018年7月1日 第２９回社団戦リーグが開幕しました。前年度の好成績が報われ繰り上げで4部リーグ白に昇格してました。第一日目の成績は昇格によるレベルの違いを実感した苦い結果となりました。来週の第２日目も強敵ですが、おいら負けないよ。きっと。</p>
+								</figcaption>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１８年７月大会" height="220" src="img/06-kenkyukai-20180721-01.jpg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										７月研究会</h3>
+								</div>
+								<p>
+									2018年7月21日 小金井将棋研究会2018年7月大会は8名参加の時計ハンデ戦を行い太田さんが３勝１敗で優勝。初参加の続くんも同じく３勝を上げ準優勝しました。次回は8月18日に開催します。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20180721.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１８年６月大会" height="220" src="img/06-kenkyukai-20180623-01.jpg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										６月研究会</h3>
+								</div>
+								<p>
+									2018年6月23日 小金井将棋研究会2018年6月大会は6名参加。総当たりリーグ戦で4名が同じ勝敗となり優勝を分け合いました。次回は7月21日に開催します。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20180623.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="第２回小金井最強戦" height="220" src="img/06-kenkyukai-20180603-02.jpg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										第２回小金井最強戦</h3>
+								</div>
+								<p>
+									2018年6月3日 第２回小金井最強戦を開催しました。２０名参加。Sクラス、Aクラスともに３勝１敗で並び、SBも同点となり、直接対決の結果により優勝を決しました。惜しくも着外となった方々も僅差で大熱戦でした。</p>
+								</figcaption>
+								<a href="06-saikyosen-20180603.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１８年５月大会" height="220" src="img/06-kenkyukai-20180519-02.jpg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										門倉五段指導対局会＆５月研究会</h3>
+								</div>
+								<p>
+									2018年5月20日 門倉五段に指導対局と大盤での自戦解説を行っていただきました。多数のご参加ありがとうございました。次の一手はこれぞプロいう難問でしたね。先生のわかりやすい解説でとても楽しめました。小金井将棋研究会2018年5月大会は12名参加。太田さん、井上さんがともに３勝を上げ優勝しました。。次回は小金井最強戦を6月3日に開催します。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20180519.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１８年４月大会" height="220" src="img/06-kenkyukai-20180421-01.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										研究会４月大会</h3>
+								</div>
+								<p>
+									2018年4月21日 小金井将棋研究会2018年4月大会は12名参加。亀田さんが優勝しました。初参加の小林くんは小学生ながら３勝を上げました。お見事です。次回は5月19日に開催します。門倉啓太五段をお迎えして指導対局を行う予定です。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20180421.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="第１７回小金井こども将棋大会" height="220" src="img/06-kodomo-17-00.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										第１７回小金井こども将棋大会</h3>
+								</div>
+								<p>
+									2018年3月31日 第17回小金井こども将棋大会は29名参加。Aクラストーナメントは邊土名さんが優勝しました。29名のこどもたちが参加しました。</p>
+								</figcaption>
+								<a href="06-kodomo-17.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１８年３月大会" height="220" src="img/06-kenkyukai-20180324-01.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										研究会３月大会</h3>
+								</div>
+								<p>
+									2018年3月24日 小金井将棋研究会2018年3月大会は12名参加。Sクラスは井上さん、Aクラスは前田さんが優勝しました。次回は4月21日に開催します。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20180324.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井こども将棋教室２０１８年３月１０日" height="220" src="img/kodomo-school.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										こども教室３月１０日</h3>
+								</div>
+								<p>
+									ご注意下さい!!!<br/>2018年3月10日の小金井こども将棋教室は、いつもより1時間遅く15:00-17:30で行います。</p>
+								</figcaption>
+								<a href="02.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１８年２月大会" height="220" src="img/06-kenkyukai-20180217-03.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										研究会２月大会</h3>
+								</div>
+								<p>
+									2018年2月17日 小金井将棋研究会2018年2月大会は11名参加。Sクラスは井上さん、Aクラスは谷田部さんが優勝しました。次回は3月24日に開催します。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20180217.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="支部対抗戦" height="220" src="img/shibutaiko-2018-1.jpg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										2018年支部対抗戦</h3>
+								</div>
+								<p>
+									2018年2月12日 小金井支部として初参加。純粋に３段以下のチームで望み、決勝トーナメントで敗退しました。</p>
+								</figcaption>
+								<a href="http://koganeishougi.homepagelife.jp/06-shibutaiko-2018-koganei7.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="杉本四段" height="220" src="img/sugifes2018feb03.jpg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										杉本四段指導対局祭り</h3>
+								</div>
+								<p>
+									2018年2月3日 杉本和陽四段をお迎えして指導対局会を行いました。時間が足りなくなるほどの多数の方にのご参加いただきありがとうございました。先生には長くまでお付き合いいただきありがとうございました。今後のご活躍をお祈りいたします。</p>
+								</figcaption>
+								<a href="sugifes2018feb.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会２０１８年１月大会" height="220" src="img/06-kenkyukai-20180120-01.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										研究会１月大会</h3>
+								</div>
+								<p>
+									2018年1月20日 小金井将棋研究会2018年1月大会は10名参加でのトーナメントを開催しました。太田さんが本年最初の大会で優勝しました。次回は杉本和陽四段の指導対局とあわせて2月3日にアマ手合い戦を開催します。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20180120.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img src="img/sugimoto2018FEB-poster.jpg" height="220" alt="杉本四段指導対局祭り"/>
+								<figcaption>
+									<div class="heading">
+										<h3>杉本四段指導対局祭り</h3>
+									</div>
+									<p>2018年2月3日 杉本四段をお招きしてご指導いただけることになりました。参加者募集中です。詳細はお問い合わせください。</p>
+								</figcaption>
+								<a href="sugifes2018feb.html"></a>
+							</figure>
+						</div>
+					</div>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							2017年情報</div>
+						<div class="panel-body">
+							<figure class="snip1229">
+								<img src="img/06-kenkyukai-20171223-01.jpeg" height="220" alt="１２月白門棋道会対抗戦"/>
+								<figcaption>
+									<div class="heading">
+										<h3>１２月対抗戦</h3>
+									</div>
+									<p>2017年12月23日 白門棋道会チームをお招きして対抗戦を実施しました。団体戦の企画は初めてでしたが、当初予定していなかった方にも飛び入りで参加いただき大熱戦でした。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20171223.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会１１月大会" height="220" src="img/06-kenkyukai-20171118-01.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										研究会１１月大会</h3>
+								</div>
+								<p>
+									2017年11月18日 小金井将棋研究会11月大会は10名参加でのトーナメントを開催しました。古井さんがSクラスで今年５回目の優勝を飾りました。谷田部さんはAクラスで優勝し、三段に昇段しました。本年最後の研究会を12月23日に開催します。白門棋道会チームをお招きしての対抗戦とあわせて開催予定です。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20171118.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="社団戦最終結果" height="220" src="img/06-shadansen-20171029-01.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										社団戦最終結果</h3>
+								</div>
+								<p>
+									2017年10月29日 社団戦最終日は1勝2敗。11勝が4チーム並ぶ混戦の結果堂々3位です。台風のため入れ替え戦がなく惜しくも昇格は逃しましたが大健闘だったと思います。なにより楽しかった。実力をつけて来年挑戦しましょう。皆様ありがとうございました。</p>
+								</figcaption>
+								<a href="06-shadansen-koganei7.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img alt="小金井将棋研究会１０月大会" height="220" src="img/06-kenkyukai-20171022-01.jpeg" /> <figcaption>
+								<div class="heading">
+									<h3>
+										研究会１０月大会</h3>
+								</div>
+								<p>
+									2017年10月22日 小金井将棋研究会10月大会は8名参加でのトーナメントを開催しました。古井さんが今年４回目の優勝を飾りました。大会結果に記録を載せています。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20171022.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img src="img/06-kenkyukai-20170923-01.jpeg" height="220" alt="小金井将棋研究会９月大会"/>
+								<figcaption>
+									<div class="heading">
+										<h3>研究会９月大会</h3>
+									</div>
+									<p>2017年9月23日 小金井将棋研究会９月大会はSクラス4名、Aクラス6名参加でのトーナメントを開催しました。大会結果に記録を載せています。OTさんまた来てください。Aクラス優勝の前田は6連勝の規定により三段に昇段しました。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20170923.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img src="img/06-shadansen-2017-03-02.jpeg" height="220" alt="社団戦第三日目"/>
+								<figcaption>
+									<div class="heading">
+										<h3>社団戦第三日目速報</h3>
+									</div>
+									<p>2017年8月27日 社団戦第三日目結果速報。今回は２勝２敗で５部リーグトップ並走中。皆さん強いです。</p>
+								</figcaption>
+								<a href="http://toushouren.world.coocan.jp/shadan/28/3nitimeseisekijun1.pdf"></a>
+							</figure>
+							<figure class="snip1229">
+								<img src="img/06-kenkyukai-20170820-01.jpeg" height="220" alt="小金井将棋研究会８月大会"/>
+								<figcaption>
+									<div class="heading">
+										<h3>研究会８月大会</h3>
+									</div>
+									<p>2017年8月20日 小金井将棋研究会８月大会は10名参加でのトーナメントを開催しました。大会結果に記録を載せています。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20170820.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img src="img/06-kodomo-16-10.jpeg" alt="こども将棋大会"/>
+								<figcaption>
+									<div>
+										<h3>こども将棋大会</h3>
+									</div>
+									<p>2017年8月12日 こども将棋大会を開催しました。</p>
+								</figcaption>
+								<a href="06-kodomo-16.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img src="img/shadansen-20170730-02.jpg" alt="社団戦第ニ日目2"/>
+								<figcaption>
+									<div>
+										<h3>社団戦第ニ日目続報</h3>
+									</div>
+									<p>2017年8月9日 社団戦８連勝、単独首位です</p>
+								</figcaption>
+								<a href="http://toushouren.world.coocan.jp/shadan/28/2nitimeseisekijun1.pdf"></a>
+							</figure>
+							<figure class="snip1229">
+								<img src="img/shadansen-20170730-01.jpg" alt="社団戦第ニ日目1"/>
+								<figcaption>
+									<div class="heading">
+										<h3>社団戦第ニ日目速報</h3>
+									</div>
+									<p>2017年7月30日 社団戦第ニ日目結果速報。なんとなんと望外の４連勝。現在５部リーグトップ並走中。あれ、意外とイケてるかも。</p>
+								</figcaption>
+								<a href="#"></a>
+							</figure>
+							<figure class="snip1229">
+								<img src="img/certificate.jpeg" alt="昇段"/>
+								<figcaption>
+									<div class="heading">
+										<h3>昇段</h3>
+									</div>
+									<p>2017年7月30日 少し前になりますが、6月18日に古井丈大さんが五段に昇段しました。7月16日に山崎貴俊さんが三段に昇段しました。古井さんは「第41回中学生将棋名人戦」で惜しくもベスト8でした。ご健闘おめでとうございます。</p>
+								</figcaption>
+								<a href="https://www.shogi.or.jp/event/2017/07/42_14.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img src="img/06-kenkyukai-20170716-01.jpeg" height="220" alt="小金井将棋研究会７月大会"/>
+								<figcaption>
+									<div class="heading">
+										<h3>研究会７月大会</h3>
+									</div>
+									<p>2017年7月17日 小金井将棋研究会７月大会は12名参加でのトーナメントを開催しました。大会結果に記録を載せています。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20170716.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img src="http://shogive.com/wp-content/uploads/2017/06/d54a7c16cc1a47431995c8cdb2523565-1024x768.jpg" alt="社団戦第一日目"/>
+								<figcaption>
+									<div class="heading">
+										<h3>社団戦第一日目速報</h3>
+									</div>
+									<p>2017年6月25日 社団戦第一日目結果速報。なんと僥倖の４連勝。亀田さん、田村さんの４勝無敗が特に素晴らしかったです。<br/>※画像は将GIVEさんのサイトのものです。左端の青いゼッケンが我々です。</p>
+								</figcaption>
+								<a href="#"></a>
+							</figure>
+							<figure class="snip1229">
+								<img src="img/06-kenkyukai-20170618-01.jpeg"  height="220" alt="小金井将棋研究会６月大会"/>
+								<figcaption>
+									<div class="heading">
+										<h3>研究会６月大会</h3>
+									</div>
+									<p>2017年6月18日 小金井将棋研究会６月大会は６名参加でのトーナメントを開催しました。大会結果に記録を載せています。古井くん初戦に敗れながらもV3達成。強いです。</p>
+								</figcaption>
+								<a href="06-kenkyukai-20170618.html"></a>
+							</figure>
+							<figure class="snip1229">
+								<img src="http://toushouren.world.coocan.jp/image/image.jpg"  height="220" alt="社団戦参戦"/>
+								<figcaption>
+									<div class="heading">
+										<h3>社団戦参戦</h3>
+									</div>
+									<p>第２８回社団戦リーグに「小金井将棋研」有志で参戦中。大会案内は東京アマチュア将棋連盟を参照。５部リーグ白です。参加メンバーは予定を入れておいてください。将棋大会結果のメンバー一覧のプロフィールに書いています。</p>
+								</figcaption>
+								<a href="http://toushouren.world.coocan.jp/"></a>
+							</figure>
+						</div>
+
+					</div>
+			</div>
+
+		</div>
+
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="faq.js" type="text/javascript"></script>
+		<script charset="UTF-8" src="hover.js" type="text/javascript">
+		</script>
+		<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-89517945-1', 'auto');
+		ga('send', 'pageview');
+		</script>
+
+	</body>
+
+</html>
+

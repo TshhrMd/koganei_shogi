@@ -20,15 +20,16 @@
 <body>
   <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-       <div class="navbar-header">
-         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main">
-           <span class="sr-only">メニュー</span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="hamburger-text">MENU</span>
-        </button>
-      </div>
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-target="#navbar-main" data-toggle="collapse" type="button">
+					<span class="sr-only">メニュー</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+				<div class="navbar-brand" href="#">
+				</div>
+				</div>
       <div class="collapse navbar-collapse" id="navbar-main">
         <ul class="nav navbar-nav">
           <li><a href="index.html">トップ</a></li>
@@ -49,7 +50,7 @@
     <div class="page-header" id="banner">
       <div class="row">
         <div class="col-lg-2 col-md-3 col-sm-4">
-          <img src="img/logo.jpeg" alt="小金井の将棋道場です" height="90" width="90" position="bottom" />
+						<img class="pc" alt="小金井の将棋道場です" height="90" position="bottom" src="img/logo.jpeg" width="90" />
         </div>
         <div class="col-lg-10 col-md-9 col-sm-8">
           <h1>小金井将棋研究会(平成２９年１月２２日)の結果</h1>
@@ -124,9 +125,6 @@
                 <div class="item active">
                   <img src="img/06-kenkyukai-20170122-1.jpeg" alt="">
                 </div>
-                <div class="item">
-                  <img src="img/06-kenkyukai-20170122-2.jpeg" alt="">
-                </div>
               </div>
               <a class="left carousel-control" href="#carousel-example" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -143,7 +141,7 @@
     </div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
