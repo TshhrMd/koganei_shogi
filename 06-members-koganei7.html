@@ -23,7 +23,10 @@
                       return '<a href="06-mypage-koganei7.html?name=' + data.name1 + '">' + data.name1 + '</a>';
                     }
                   },
-                  { data: "degree1" },
+                  { data : function(data, type, row, meta){
+                      return data.degree1.substring(3);
+                    }
+                  },
                   { data: "profile1" }
                 ];
 
