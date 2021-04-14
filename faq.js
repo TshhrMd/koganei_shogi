@@ -47,7 +47,7 @@ function selectMessage(){
 	if (/使い方/.test(message)) {
 		botMessage += "\"料金\"とか\"場所\"とか、知りたいことを適当に入力すれば適当に回答します。<br/>なお、\"小金井将棋研究会\"と\"小金井こども教室\"以外のことについてはDoCoMoのAPIが応答します。";
 	}
-	if (/料金|値段|いくら|費用/.test(message)) {
+	else if (/料金|値段|いくら|費用/.test(message)) {
 	    if (/こども教室/.test(message)){
 			botMessage += kb[i].howMuchC;
 	    }else if (/研究会/.test(message)){
@@ -56,7 +56,7 @@ function selectMessage(){
 			botMessage += kb[i].howMuch;
 		}
 	}
-	if (/時間|いつ|何時|開始/.test(message)) {
+	else if (/時間|いつ|何時|開始/.test(message)) {
 	    if (/こども教室/.test(message)){
 			botMessage += kb[i].whenC;
 	    }else if (/研究会/.test(message)){
@@ -65,13 +65,13 @@ function selectMessage(){
 			botMessage += kb[i].when;
 		}
 	}
-	if (/予定|今度|何日|何曜日/.test(message)) {
+	else if (/予定|今度|何日|何曜日/.test(message)) {
 		botMessage += kb[i].nextPlan;
 	}
-	if (/場所|どこ|何処/.test(message)) {
+	else if (/場所|どこ|何処/.test(message)) {
 		botMessage += kb[i].where;
 	}
-	if (/誰|だれ|参加/.test(message)) {
+	else if (/誰|だれ|参加/.test(message)) {
 	    if (/こども教室/.test(message)){
 			botMessage += kb[i].whoC;
 	    }else if (/研究会/.test(message)){
@@ -80,7 +80,7 @@ function selectMessage(){
 			botMessage += kb[i].who;
 		}
 	}
-	if (/指導|先生|棋士/.test(message)) {
+	else if (/指導|先生|棋士/.test(message)) {
 	    if (/こども教室/.test(message)){
 			botMessage += kb[i].masterC;
 	    }else if (/研究会/.test(message)){
@@ -89,12 +89,12 @@ function selectMessage(){
 			botMessage += kb[i].master;
 		}
 	}
-	if (/７六歩/.test(message)) {
+	else if (/７六歩/.test(message)) {
 		botMessage += kb[i].f34;
 	}else if (/２六歩/.test(message)) {
 		botMessage += kb[i].f84;
 	}
-	if (/何を/.test(message)) {
+	else if (/何を/.test(message)) {
 	    if (/こども教室/.test(message)){
 			botMessage += kb[i].whatC;
 	    }else if (/研究会/.test(message)){
@@ -103,11 +103,11 @@ function selectMessage(){
 			botMessage += kb[i].what;
 		}
 	}
-	if (/どんな|どのように|どうやって/.test(message)) {
+	else if (/どんな|どのように|どうやって/.test(message)) {
 		botMessage += kb[i].how;
 	}
 	
-	if (botMessage=="" && /子供教室|こども将棋|こども教室/.test(message)){
+	else if (botMessage=="" && /子供教室|こども将棋|こども教室/.test(message)){
 	    if (/料金/.test(message)){
 			botMessage += kb[i].howMuchC;
 	    }else if (/場所/.test(message)){
@@ -124,7 +124,7 @@ function selectMessage(){
 			botMessage += kb[i].child;
 		}
 	}
-	if (botMessage=="" && /小金井研|小金井将棋|研究会/.test(message)){
+	else if (botMessage=="" && /小金井研|小金井将棋|研究会/.test(message)){
 	    if (/料金/.test(message)){
 			botMessage += kb[i].howMuchK;
 	    }else if (/場所/.test(message)){
@@ -141,7 +141,7 @@ function selectMessage(){
 			botMessage += kb[i].adult;
 		}
 	}
-	if (/を調べて$/.test(message)) {
+	else if (/を調べて$/.test(message)) {
     	$.ajax({
     		type: "GET",
     		url: 'https://api.apigw.smt.docomo.ne.jp/knowledgeQA/v1/ask?APIKEY=47775049666c6b5a4d30766e626d7549776b6b63644a524d374a7376503058664343643252324c46354e36&q='+message.slice(0, 5),
@@ -162,6 +162,26 @@ function selectMessage(){
     		}
     	});
 	}
+	else if (/局面図$/.test(message)) {
+		botMessage +=  "<figcaption>局面図</figcaption>";
+		botMessage +=  "<pre class='shogizumen'>";
+		botMessage +=  message.slice(0, 5);
+		botMessage +=  "</pre>";
+		botMessage +=  "</figure>";
+	}
+  outputArea.append(`
+
+    <div class='user-message'>
+
+      <div class='message'>
+
+        ${message}
+        
+      </div>
+
+    </div>
+
+  `);
 	if (botMessage==""){
 		var req = {
   "utt": message,
@@ -198,19 +218,6 @@ function selectMessage(){
     		}
     	});
 	}
-  outputArea.append(`
-
-    <div class='user-message'>
-
-      <div class='message'>
-
-        ${message}
-        
-      </div>
-
-    </div>
-
-  `);
 
   setTimeout(function() {
 
