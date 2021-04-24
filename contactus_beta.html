@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="小金井こども将棋大会のご案内や将棋研究会,小金井子供将棋教室、将棋大会の紹介をしています。" name="description" />
+		<meta content="小金井将棋、小金井子供将棋大会、小金井こども将棋大会,小金井将棋大会,武蔵小金井将棋,小金井将棋研究会,小金井子供将棋教室,小金井こども将棋教室,小金井将棋大会,小池裕喜,杉本和陽,小金井支部" name="keywords" />
+		<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<title>小金井将棋 お問い合わせ</title>
+		<link href="favicon.ico" rel="SHORTCUT ICON" />
+		<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css" integrity="sha384-zF4BRsG/fLiTGfR9QL82DrilZxrwgY/+du4p/c7J72zZj+FLYq4zY00RylP9ZjiT" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" />
+		<link href="custom.css" rel="stylesheet" />
+		<script type="text/javascript">
+function sendMail() {
+    var date = '\t体験希望日:' + $('#date').val();
+    var name =  $('#name').val();
+    var contact = '連絡先:' + $('#contact').val();
+    var parents = '保護者氏名:' + $('#parents').val();
+    var skill = '棋力:' + $('#skill').val();
+    var message = 'メッセージ:\n' + $('#message').val();
+    var bodymsg = '【小金井こども将棋教室体験講習申し込み】\n\n\t'+name + '様\n' + date + '\n\t' + contact + '\n\t' + parents + '\n\t' + skill + '\n\t' + message;
+    window.open(encodeURI('mailto:koganei_shogi_admin@googlegroups.com?subject=小金井こども将棋教室体験講習申し込み - ' + name + '様&body='+ bodymsg),'');
+};
+</script>
+		<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+		<link href="_sc_index_rss20.xml" rel="alternate" title="RSS2.0" type="application/rss+xml" />
+	</head>
+	<body onload="close('#modal-content-01')">
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-target="#navbar-main" data-toggle="collapse" type="button">
+					<span class="sr-only">メニュー</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+				<div class="navbar-brand" href="#">
+				</div>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-main">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="index.html">トップ</a></li>
+						<li>
+							<a href="01.html">こども将棋大会</a></li>
+						<li>
+							<a href="02.html">こども・大人将棋教室</a></li>
+						<li>
+							<a href="03.html">小金井将棋研究会</a></li>
+						<li>
+							<a href="04.html">リンク集</a></li>
+						<li>
+							<a href="05.html">小金井支部</a></li>
+						<li>
+							<a href="06.html">結果</a></li>
+						<li>
+							<a href="_sc_index_rss20.xml"><img src="img/btn_rss3_05.gif" /></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="page-header" id="banner">
+				<div class="row">
+					<div class="col-lg-2 col-md-3 col-sm-4">
+						<img class="pc" alt="小金井の将棋道場です" height="90" position="bottom" src="img/logo.jpeg" width="90" /></div>
+					<div class="col-lg-10 col-md-9 col-sm-8">
+						<h1>
+							お問い合わせ</h1>
+						<p class="lead">
+							KOGANEI SHOGI</p>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="modal-content-01">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title">体験講習</h4>
+						</div>
+						<div class="modal-body">
+						こども教室体験講習をご希望の方は以下の項目を記入の上、「メールソフト起動」をクリックし、お使いメールソフトからお送りください。<br/>
+						<form>
+							<div class="form-group">
+								<label for="Date" class="col-sm-2 control-label">希望日</label>
+								<div class='input-group date' id="datetimepicker3">
+									<input type="text" class="form-control" readonly="readonly" name="Date" id="date" placeholder="年/月/日 こども将棋教室の開催予定日から選択してください"></input>
+									<span class="input-group-addon">
+									<span class="glyphicon glyphicon-time"></span>
+									</span>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="Name" class="col-sm-2 control-label">本人氏名</label>
+								<input type="text" class="form-control" name="Name" id="name" placeholder="本人氏名（ふりがな）"></input>
+							</div>
+							<div class="form-group">
+								<label for="Parents" class="col-sm-2 control-label">保護者氏名</label>
+								<input type="text" class="form-control" name="Parents" id="parents" placeholder="保護者氏名"></input>
+							</div>
+							<div class="form-group">
+								<label for="Contact" class="col-sm-2 control-label">連絡先</label>
+								<input type="text" class="form-control" name="Contact" id="contact" placeholder="Emailアドレスなどの連絡先"></input>
+							</div>
+							<div class="form-group">
+								<label for="Skill" class="col-sm-2 control-label">本人の将棋経験</label>
+								<input type="text" class="form-control"  name="Skill" id="skill" placeholder="可能ならどこの道場で何級か等"></input>
+							</div>
+							<div class="form-group">
+								<label for="Message" class="col-sm-2 control-label">自由記述欄</label>
+								<textarea class="form-control" rows="5" name="Message" id="message"  placeholder="ご不明な点など自由にご連絡ください"></textarea>
+							</div>
+							<div>
+								<button type="submit" onclick="sendMail()" class="btn btn-default">メールソフト起動</button>
+								<button type="reset" class="btn btn-default">リセット</button>
+							</div>
+						</form>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-primary" data-dismiss="modal" type="button">閉じる</button></div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-content">
+				<!-- tab-pane general start-->
+				<div class="tab-pane active" id="general01">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<div class="panel panel-primary">
+								<div class="panel-heading">
+									お問い合わせ</div>
+								<div class="panel-body">
+								<p>
+								ご不明な点などございましたら、<br/>
+									<a href="mailto:koganei_shogi_admin@googlegroups.com">koganei_shogi_admin@googlegroups.com</a></br>
+									にメールにてご連絡いただくようお願いいたします。&nbsp;</p>
+								<p>
+									&nbsp;</p>
+								こども将棋教室の体験講習を希望の方は<button class="btn btn-link" data-target="#modal-content-01" data-toggle="modal" type="button">こちら</button>のフォームから必要な情報を記載してメールをお送りください。</td>
+								<p>
+								&nbsp;</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<hr />
+				<a href="privacy_policy.html">個人情報保護について</a></footer>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+      <script type="text/javascript">
+         $(function () {
+             $('#datetimepicker3').datetimepicker({
+                 format: 'YYYY/MM/DD',
+                 ignoreReadonly: true ,
+                 defaultDate: '2021/5/8',
+                 locale: 'ja'
+             });
+         });
+      </script>
+            <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-89517945-1', 'auto');
+  ga('send', 'pageview');
+</script>
+			<p>
+				&nbsp;</p>
+		</div>
+		<p>
+			&nbsp;</p>
+	</body>
+</html>
+
