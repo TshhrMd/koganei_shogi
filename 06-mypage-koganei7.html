@@ -98,6 +98,8 @@
             $("#foo-table").dataTable({
                 ajax: { url: "standings-with-rating.json", dataSrc: 'standings' },
                 order: [0, "desc"],
+                pageLength: 20,
+                lengthMenu: [[10,20,50,-1],[10,20,50,"全件"]],
                 columns: [
                   { data: "no" },
                   { data: "date" },
