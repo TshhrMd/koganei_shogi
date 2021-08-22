@@ -8,7 +8,7 @@ if (!firebase.apps.length) {
     firebase.initializeApp(config);
 }
 var db = firebase.firestore();
-db.collection("ProfessionalPlayerEvent").get().then(function(querySnapshot) {
+db.collection("ProfessionalPlayerEvent").where("date", ">=", "2021/07/01 00:00").get().then(function(querySnapshot) {
   querySnapshot.forEach(function(doc) {
     if (doc.exists){
       console.log("Document data:", doc.data());

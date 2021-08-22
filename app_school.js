@@ -8,7 +8,7 @@ if (!firebase.apps.length) {
     firebase.initializeApp(config);
 }
 var db = firebase.firestore();
-db.collection("school").get().then(function(querySnapshot) {
+db.collection("school").where("date", ">=", "2021/07/01 00:00").get().then(function(querySnapshot) {
   querySnapshot.forEach(function(doc) {
     if (doc.exists){
       console.log("Document data:", doc.data());
