@@ -1,0 +1,16 @@
+'encoding=Shift_JIS
+' ---- Kifu for Windows V7 V7.50 CSA形式棋譜ファイル ----
+V2.2
+P1 *  *  *  *  *  *  * -KE+TO
+P2 *  *  *  *  *  *  * -OU * 
+P3 *  *  *  *  * +GI * -GI * 
+P4 *  *  *  *  * -FU *  *  * 
+P5 *  *  *  *  *  *  *  * +UM
+P6 *  *  *  *  *  *  *  *  * 
+P7 *  *  *  *  *  *  *  *  * 
+P8 *  *  *  *  *  *  *  *  * 
+P9 *  *  *  *  *  *  *  *  * 
+P+00KA00GI
+P-00HI00HI00KI00KI00KI00KI00GI00KE00KE00KE00KY00KY00KY00KY00FU00FU00FU00FU00FU00FU00FU00FU00FU00FU00FU00FU00FU00FU00FU00FU
++
+'*7

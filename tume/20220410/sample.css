@@ -1,0 +1,58 @@
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #000;
+		color: #fff
+	}
+}
+
+html {
+	font-size: large
+}
+
+h1 {
+	font-size: x-large
+}
+
+h2 {
+	font-size: large
+}
+
+input {
+	font-size: large;
+	height: 1.5em;
+	border: 1px solid;
+	margin: 0.2em
+}
+
+select {
+	font-size: large;
+	height: 1.5em;
+	border: 1px solid;
+	margin: 0.2em
+}
+
+button {
+	font-size: large;
+	height: 1.5em;
+	border: 1px solid;
+	margin: 0.2em
+}
+
+div.viewarea {
+	width: auto;
+	display:-webkit-flex;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	border: 1px solid;
+	margin: 0em
+}
+
+canvas {
+	flex: none;
+	margin: 2px
+}
+
+canvas:focus {
+	outline: double
+}

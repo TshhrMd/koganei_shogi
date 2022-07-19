@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+<link href="sample.css" rel="stylesheet">
+<title> 詰将棋練習問題2022.04.08</title>
+</head>
+<body>
+<h1> 詰将棋練習問題2022.04.08</h1>
+<!-- ツールの処理対象はここから -->
+<div>
+	<!-- formは１つだけ置きます -->
+	<form method ="post" action="https://docs.google.com/forms/d/1MdSTPNm9rT9N49hsHYl07gFckHsg2a2JLJ-Y89KeznU/formResponse" autocomplete="off">
+
+		<!-- action は、GoogleフォームのURLで、末尾をformResponseに変える -->
+		<label>氏名
+			<input name="entry.1755461908" type="text" id="name">  <!-- entry.の後の数字は、Googleフォームのソースコードで確認して下さい。以下同じ -->
+		</label><br>
+		<label>居住地
+			<select name="entry.500366352" id="place"> <!-- 居住地として都道府県を選択するselectタグの例 -->
+				<option label=" " selected> </option>
+				<option label="北海道">北海道</option>
+				<option label="青森県">青森県</option>
+				<option label="岩手県">岩手県</option>
+				<option label="宮城県">宮城県</option>
+				<option label="秋田県">秋田県</option>
+				<option label="山形県">山形県</option>
+				<option label="福島県">福島県</option>
+				<option label="茨城県">茨城県</option>
+				<option label="栃木県">栃木県</option>
+				<option label="群馬県">群馬県</option>
+				<option label="埼玉県">埼玉県</option>
+				<option label="千葉県">千葉県</option>
+				<option label="東京都">東京都</option>
+				<option label="神奈川県">神奈川県</option>
+				<option label="新潟県">新潟県</option>
+				<option label="富山県">富山県</option>
+				<option label="石川県">石川県</option>
+				<option label="福井県">福井県</option>
+				<option label="山梨県">山梨県</option>
+				<option label="長野県">長野県</option>
+				<option label="岐阜県">岐阜県</option>
+				<option label="静岡県">静岡県</option>
+				<option label="愛知県">愛知県</option>
+				<option label="三重県">三重県</option>
+				<option label="滋賀県">滋賀県</option>
+				<option label="京都府">京都府</option>
+				<option label="大阪府">大阪府</option>
+				<option label="兵庫県">兵庫県</option>
+				<option label="奈良県">奈良県</option>
+				<option label="和歌山県">和歌山県</option>
+				<option label="鳥取県">鳥取県</option>
+				<option label="島根県">島根県</option>
+				<option label="岡山県">岡山県</option>
+				<option label="広島県">広島県</option>
+				<option label="山口県">山口県</option>
+				<option label="徳島県">徳島県</option>
+				<option label="香川県">香川県</option>
+				<option label="愛媛県">愛媛県</option>
+				<option label="高知県">高知県</option>
+				<option label="福岡県">福岡県</option>
+				<option label="佐賀県">佐賀県</option>
+				<option label="長崎県">長崎県</option>
+				<option label="熊本県">熊本県</option>
+				<option label="大分県">大分県</option>
+				<option label="宮崎県">宮崎県</option>
+				<option label="鹿児島県">鹿児島県</option>
+				<option label="沖縄県">沖縄県</option>
+				<option label="その他">その他</option>
+			</select>
+		</label>
+		<input name="entry.812847866"  type="hidden" id="answer0"> <!-- answer0 は重複チェック項目。自動設定するのでtype="hidden"（非表示） -->
+		<input name="entry.508406732" type="hidden" id="answer1"> <!-- answer1 以降は解答入力項目。自動設定するのでtype="hidden"（非表示） -->
+		<input name="entry.880194662" type="hidden" id="answer2">
+		<input name="entry.928150952" type="hidden" id="answer3">
+		<input name="entry.215150248" type="hidden" id="answer4">
+	</form>
+	<div></div> <!-- 状態メッセージの表示位置。任意の個数 -->
+	<div class="viewarea">
+	
+		<!-- classはサンプルcss用に設定していますが、ツールの基本的動作とは無関係です。
+		サンプルcssでは、横幅autoのFlexBoxスタイルを設定しています。
+		盤面サイズは、このcanvasを含む表示サイズ（この例ではdiv.viewareaに設定されたスタイル）から算出します -->
+
+		<canvas></canvas> <!-- <canvas></canvas>は問題の数だけ置きます -->
+		<canvas></canvas>
+		<canvas></canvas>
+		<canvas></canvas>
+	</div>
+	<div></div> <!-- 状態メッセージの表示位置。任意の個数 -->
+	<button>解答を送信</button> <!-- buttonを１つだけ置きます -->
+	<select>
+		<option label="▲Top" value="0" selected>▲Top</option> <!-- タッチデバイスの問題選択ボタン。0から順にvalueを設定 -->
+		<option label="第1問" value="1">第1問</option>
+		<option label="第2問" value="2">第2問</option>
+		<option label="第3問" value="3">第3問</option>
+		<option label="第4問" value="4">第4問</option>
+	</select>
+	<script src="tsumecompe.js"></script> <!-- 処理対象の一番最後に置きます -->
+</div>
+<!-- ツールの処理対象はここまで -->
+<br><br><br><br><br> <!-- タッチデバイスで、最終問題の盤面が問題選択ボタンとカブるのを防止するための余白 -->
+使用ツール：<a href="https://tsume-kobo.org/TsumeCompe/">TsumeCompe.js</a>
+</body>
+</html>
